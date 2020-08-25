@@ -10,6 +10,7 @@ jobs:
   docker-publish-to-dh:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         version:
           - 6.6.0
